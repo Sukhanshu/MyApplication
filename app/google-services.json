@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "996849398361",
+    "firebase_url": "https://vocalforlocal-c6e44.firebaseio.com",
+    "project_id": "vocalforlocal-c6e44",
+    "storage_bucket": "vocalforlocal-c6e44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996849398361:android:874bd6b52054bebb883748",
+        "android_client_info": {
+          "package_name": "com.example.vocalforlocal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996849398361-267sm8o3f1mmjm1bsjkov61jvvklmggs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7cfYhcJeL6xosx0_AOnQ3gO8Bm2yzFEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996849398361-267sm8o3f1mmjm1bsjkov61jvvklmggs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
