@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
         progressBar=findViewById(R.id.progressBar);
         fAuth=FirebaseAuth.getInstance();
         LoginButton = findViewById(R.id.registerButton);
-        NewUserCreateAccountbutton = findViewById(R.id.textView3);
+        NewUserCreateAccountbutton = findViewById(R.id.textView5);
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +71,7 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this , "Logged in successfully" , Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext() , Register.class));
+                            startActivity(new Intent(getApplicationContext() , Display.class));
                         }
 
                         else{
@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity {
      NewUserCreateAccountbutton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View view) {
-           startActivity(new Intent(getApplicationContext(),Register.class));
+           startActivity(new Intent(getApplicationContext(), Register.class));
          }
      });
 
