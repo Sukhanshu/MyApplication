@@ -1,5 +1,7 @@
 package com.example.vocalforlocal.models;
 
+import java.util.Objects;
+
 public class Product {
     private int productImg;
     private String productName;
@@ -21,5 +23,20 @@ public class Product {
 
     public String getProductPrice(){
         return productPrice;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return productImg == product.productImg &&
+                Objects.equals(productName, product.productName) &&
+                Objects.equals(productPrice, product.productPrice);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(productImg, productName, productPrice);
     }
 }
