@@ -13,45 +13,45 @@ import com.example.vocalforlocal.models.Product;
 
 import java.util.ArrayList;
 
-public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ExampleViewHolder> {
-    private ArrayList<Product> mExampleList;
+public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
+    private ArrayList<Product> productArrayList;
 
-    public static class ExampleViewHolder extends RecyclerView.ViewHolder {
-         public ImageView mImageView;
-         public TextView mTextView3;
-         public TextView mTextView4;
+    public static class ProductViewHolder extends RecyclerView.ViewHolder {
+        public ImageView mImageView;
+        public TextView productName;
+        public TextView productPrice;
 
-        public ExampleViewHolder(@NonNull View itemView) {
+        public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
-            mImageView = itemView.findViewById(R.id.imageview);
-            mTextView3= itemView.findViewById(R.id.textView6);
-            mTextView4= itemView.findViewById(R.id.textView5);
+            mImageView = itemView.findViewById(R.id.productImg);
+            productName = itemView.findViewById(R.id.txtProductName);
+            productPrice = itemView.findViewById(R.id.txtProductPrice);
         }
     }
-    public ProductAdapter(ArrayList<Product> exampleList){
-        mExampleList= exampleList;
+
+    public ProductAdapter(ArrayList<Product> productList) {
+        productArrayList = productList;
     }
 
     @NonNull
     @Override
-    public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View V = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product, parent, false);
-        ExampleViewHolder evh = new ExampleViewHolder(V);
-        return evh;
+        return new ProductViewHolder(V);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ExampleViewHolder holder, int position) {
-        Product currentItem = mExampleList.get(position);
+    public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
+        Product currentItem = productArrayList.get(position);
 
-        holder.mImageView.setImageResource(currentItem.getmImageresource());
-        holder.mTextView3.setText(currentItem.getmText1());
-        holder.mTextView4.setText(currentItem.getMtext2());
+        holder.mImageView.setImageResource(currentItem.getproductImage());
+        holder.productName.setText(currentItem.getProductName());
+        holder.productPrice.setText(currentItem.getProductPrice());
 
     }
 
     @Override
     public int getItemCount() {
-        return mExampleList.size();
+        return productArrayList.size();
     }
 }

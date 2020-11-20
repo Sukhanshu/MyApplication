@@ -8,6 +8,7 @@
     tools:context=".Categories">
 
     <Button
+        android:onClick="onClick"
         android:id="@+id/btnPaintings"
         android:layout_width="128dp"
         android:layout_height="134dp"
@@ -22,6 +23,7 @@
         app:layout_constraintVertical_bias="0.283" />
 
     <Button
+        android:onClick="onClick"
         android:id="@+id/btnSketches"
         android:layout_width="125dp"
         android:layout_height="134dp"
@@ -36,6 +38,7 @@
         app:layout_constraintVertical_bias="0.283" />
 
     <Button
+        android:onClick="onClick"
         android:id="@+id/btnDigiArt"
         android:layout_width="122dp"
         android:layout_height="119dp"
@@ -48,6 +51,7 @@
         app:layout_constraintVertical_bias="0.267" />
 
     <Button
+        android:onClick="onClick"
         android:id="@+id/btnHomeDecor"
         android:layout_width="119dp"
         android:layout_height="125dp"
