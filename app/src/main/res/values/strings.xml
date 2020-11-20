@@ -3,4 +3,8 @@
     <string name="create_new_account">Create New Account</string>
     <string name="vocal_for_local">Vocal for Local</string>
     <string name="already_registered_login_here">Already Registered? login Here</string>
+    <string name="btn_paintings_text">Paintings</string>
+    <string name="btn_sketches_text">Sketches</string>
+    <string name="btn_digiart_text">Digiart</string>
+    <string name="btn_home_decor_text">Home Decor</string>
 </resources>
