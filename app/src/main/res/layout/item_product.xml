@@ -48,6 +48,14 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:textSize="20sp" />
+        <ImageButton
+            android:contentDescription="Add to cart"
+            android:src="@drawable/ic_add_shopping_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtProductPrice"
+            android:id="@+id/addToCartImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
 
     </RelativeLayout>
 
