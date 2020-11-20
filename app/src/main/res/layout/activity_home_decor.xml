@@ -18,11 +18,12 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:layout_gravity="center"
-            android:text="Products in Digital Art"
+            android:text="Products in Home Decor"
             android:textAlignment="center"
             android:textSize="21sp" />
 
         <Button
+            android:id="@+id/goToCartBtn"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="0.5"

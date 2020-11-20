@@ -83,7 +83,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     void toggleBtnDrawable(ProductViewHolder holder, Context context, Product product, boolean flag){
         if(flag){
             holder.btnAddToCart.setImageDrawable(context.getDrawable(R.drawable.ic_done));
-            ArrayList<Product> products = tinyDb.getListProducts("cart_products",Product.class);
+            ArrayList<Product> products = tinyDb.getListProducts("cart_products", Product.class);
             if(!products.contains(product)) products.add(product);
             Log.d(TAG +" if",products.toString());
             tinyDb.putListObject("cart_products",products);

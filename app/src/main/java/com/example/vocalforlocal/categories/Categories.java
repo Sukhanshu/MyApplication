@@ -31,9 +31,6 @@ public class Categories extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        TinyDb tinyDb = new TinyDb(getApplication());
-        ArrayList<Product> products = new ArrayList<>();
-        tinyDb.putListObject("cart_products",products);
         switch (v.getId()){
             case R.id.btnDigiArt:
                 Log.d(TAG,"Digital Art");
