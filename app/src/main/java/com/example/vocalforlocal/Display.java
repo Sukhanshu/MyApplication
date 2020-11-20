@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.vocalforlocal.models.Product;
+
 import java.util.ArrayList;
 
 public class Display extends AppCompatActivity {
@@ -17,18 +19,18 @@ public class Display extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_recyclerview);
 
-        ArrayList<Exampleitem> exampleitems= new ArrayList<>();
-        exampleitems.add(new Exampleitem(R.drawable.ic_android, "Line 1", "Line2"));
-        exampleitems.add(new Exampleitem(R.drawable.ic_bluetooth, "Line 3", "Line4"));
+        ArrayList<Product> products = new ArrayList<>();
+        products.add(new Product(R.drawable.ic_android, "Line 1", "Line2"));
+        products.add(new Product(R.drawable.ic_bluetooth, "Line 3", "Line4"));
 
 
         mRecyclerView = findViewById(R.id.recyclerview);
         mRecyclerView.setHasFixedSize(true);
 
         mlayoutmanager = new LinearLayoutManager(this);
-        mAdapter = new GridProductLayoutAdapter(exampleitems);
+        mAdapter = new GridProductLayoutAdapter(products);
 
         mRecyclerView.setLayoutManager(mlayoutmanager);
         mRecyclerView.setAdapter(mAdapter);

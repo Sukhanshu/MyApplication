@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
+        setContentView(R.layout.activity_login);
 
 
         Email = findViewById(R.id.email);
@@ -71,7 +71,7 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this , "Logged in successfully" , Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext() , Display.class));
+                            startActivity(new Intent(getApplicationContext() , Categories.class));
                         }
 
                         else{

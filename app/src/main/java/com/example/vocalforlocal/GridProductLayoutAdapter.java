@@ -9,10 +9,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vocalforlocal.models.Product;
+
 import java.util.ArrayList;
 
 public class GridProductLayoutAdapter extends RecyclerView.Adapter<GridProductLayoutAdapter.ExampleViewHolder> {
-    private ArrayList<Exampleitem> mExampleList;
+    private ArrayList<Product> mExampleList;
 
     public static class ExampleViewHolder extends RecyclerView.ViewHolder {
          public ImageView mImageView;
@@ -26,21 +28,21 @@ public class GridProductLayoutAdapter extends RecyclerView.Adapter<GridProductLa
             mTextView4= itemView.findViewById(R.id.textView5);
         }
     }
-    public GridProductLayoutAdapter(ArrayList<Exampleitem> exampleList){
+    public GridProductLayoutAdapter(ArrayList<Product> exampleList){
         mExampleList= exampleList;
     }
 
     @NonNull
     @Override
     public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View V = LayoutInflater.from(parent.getContext()).inflate(R.layout.example_item, parent, false);
+        View V = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product, parent, false);
         ExampleViewHolder evh = new ExampleViewHolder(V);
         return evh;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ExampleViewHolder holder, int position) {
-        Exampleitem currentItem = mExampleList.get(position);
+        Product currentItem = mExampleList.get(position);
 
         holder.mImageView.setImageResource(currentItem.getmImageresource());
         holder.mTextView3.setText(currentItem.getmText1());

@@ -1,11 +1,11 @@
-package com.example.vocalforlocal;
+package com.example.vocalforlocal.models;
 
-public class Exampleitem {
+public class Product {
     private int mImageresource;
     private String mText1;
     private String mtext2;
 
-    public Exampleitem(int imageResource, String text1, String text2){
+    public Product(int imageResource, String text1, String text2){
         mImageresource= imageResource;
         mText1= text1;
         mtext2= text2;
