@@ -8,7 +8,7 @@
     tools:context=".Categories">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPaintings"
         android:layout_width="128dp"
         android:layout_height="134dp"
         android:background="#FFFFFF"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.283" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSketches"
         android:layout_width="125dp"
         android:layout_height="134dp"
         android:layout_marginEnd="44dp"
@@ -31,12 +31,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.654"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/btnPaintings"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.283" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnDigiArt"
         android:layout_width="122dp"
         android:layout_height="119dp"
         android:layout_marginStart="56dp"
@@ -44,11 +44,11 @@
         android:text="Digiart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnPaintings"
         app:layout_constraintVertical_bias="0.267" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnHomeDecor"
         android:layout_width="119dp"
         android:layout_height="125dp"
         android:background="@android:color/holo_blue_light"
@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/btnDigiArt"
+        app:layout_constraintTop_toBottomOf="@+id/btnSketches"
         app:layout_constraintVertical_bias="0.266" />
 </androidx.constraintlayout.widget.ConstraintLayout>

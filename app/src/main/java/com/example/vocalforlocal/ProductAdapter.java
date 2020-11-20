@@ -13,7 +13,7 @@ import com.example.vocalforlocal.models.Product;
 
 import java.util.ArrayList;
 
-public class GridProductLayoutAdapter extends RecyclerView.Adapter<GridProductLayoutAdapter.ExampleViewHolder> {
+public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ExampleViewHolder> {
     private ArrayList<Product> mExampleList;
 
     public static class ExampleViewHolder extends RecyclerView.ViewHolder {
@@ -28,7 +28,7 @@ public class GridProductLayoutAdapter extends RecyclerView.Adapter<GridProductLa
             mTextView4= itemView.findViewById(R.id.textView5);
         }
     }
-    public GridProductLayoutAdapter(ArrayList<Product> exampleList){
+    public ProductAdapter(ArrayList<Product> exampleList){
         mExampleList= exampleList;
     }
 

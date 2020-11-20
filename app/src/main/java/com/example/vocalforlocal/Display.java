@@ -30,7 +30,7 @@ public class Display extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
 
         mlayoutmanager = new LinearLayoutManager(this);
-        mAdapter = new GridProductLayoutAdapter(products);
+        mAdapter = new ProductAdapter(products);
 
         mRecyclerView.setLayoutManager(mlayoutmanager);
         mRecyclerView.setAdapter(mAdapter);
