@@ -33,14 +33,14 @@ public class DigiArt  extends AppCompatActivity {
         ArrayList<Product> digiArtproducts = new ArrayList<>();
         goToCartBtn = findViewById(R.id.goToCartBtn);
         tinyDb = new TinyDb(getApplicationContext());
-        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 1", "45"));
-        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 2", "55"));
-        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 3", "65"));
-        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 4", "75"));
-        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 5", "65"));
-        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 6", "75"));
-        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 7", "65"));
-        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 8", "75"));
+        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 1", "45","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 2", "55","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 3", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 4", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 5", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 6", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_android, "Digi Art Product 7", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        digiArtproducts.add(new Product(R.drawable.ic_bluetooth, "Digi Art Product 8", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
 
         mRecyclerView = findViewById(R.id.recyclerview);
         mRecyclerView.setHasFixedSize(true);

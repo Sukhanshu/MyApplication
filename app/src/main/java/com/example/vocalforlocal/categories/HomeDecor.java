@@ -33,20 +33,20 @@ public class HomeDecor extends AppCompatActivity {
         goToCartBtn = findViewById(R.id.goToCartBtn);
         ArrayList<Product> homeDecorProducts = new ArrayList<>();
         tinyDb = new TinyDb(getApplicationContext());
-        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 1", "45"));
-        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 2", "55"));
-        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 3", "65"));
-        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 4", "75"));
-        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 5", "65"));
-        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 6", "75"));
-        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 7", "65"));
-        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 8", "75"));
+        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home Product 1", "45", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home Product 2", "55", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home  Product 3", "65", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home  Product 4", "75", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home  Product 5", "65", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home  Product 6", "75", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_android, "Home  Product 7", "65", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        homeDecorProducts.add(new Product(R.drawable.ic_bluetooth, "Home  Product 8", "75", "Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
 
         mRecyclerView = findViewById(R.id.recyclerview);
         mRecyclerView.setHasFixedSize(true);
 
         mlayoutmanager = new LinearLayoutManager(this);
-        mAdapter = new ProductAdapter(homeDecorProducts,tinyDb);
+        mAdapter = new ProductAdapter(homeDecorProducts, tinyDb);
 
         mRecyclerView.setLayoutManager(mlayoutmanager);
         mRecyclerView.setAdapter(mAdapter);

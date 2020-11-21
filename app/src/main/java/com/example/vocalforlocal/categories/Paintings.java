@@ -32,14 +32,14 @@ public class Paintings extends AppCompatActivity {
         goToCartBtn = findViewById(R.id.goToCartBtn);
         ArrayList<Product> paintingProducts = new ArrayList<>();
         tinyDb = new TinyDb(getApplicationContext());
-        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 1", "45"));
-        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 2", "55"));
-        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 3", "65"));
-        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 4", "75"));
-        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 5", "65"));
-        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 6", "75"));
-        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 7", "65"));
-        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 8", "75"));
+        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 1", "45","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 2", "55","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 3", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 4", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 5", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 6", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_android, "Painting Product 7", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        paintingProducts.add(new Product(R.drawable.ic_bluetooth, "Painting Product 8", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
 
         mRecyclerView = findViewById(R.id.recyclerview);
         mRecyclerView.setHasFixedSize(true);

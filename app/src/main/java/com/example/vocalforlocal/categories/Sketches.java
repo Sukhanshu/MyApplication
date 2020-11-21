@@ -33,14 +33,14 @@ public class Sketches extends AppCompatActivity {
         goToCartBtn = findViewById(R.id.goToCartBtn);
         ArrayList<Product> sketchProducts = new ArrayList<>();
         tinyDb = new TinyDb(getApplicationContext());
-        sketchProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 1", "45"));
-        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 2", "55"));
-        sketchProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 3", "65"));
-        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 4", "75"));
-        sketchProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 5", "65"));
-        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 6", "75"));
-        sketchProducts.add(new Product(R.drawable.ic_android, "Home Decor Product 7", "65"));
-        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Home Decor Product 8", "75"));
+        sketchProducts.add(new Product(R.drawable.ic_android, "Sketch Product 1", "45","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Sketch Product 2", "55","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_android, "Sketch Product 3", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Sketch Product 4", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_android, "Sketch Product 5", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Sketch Product 6", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_android, "Sketch Product 7", "65","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
+        sketchProducts.add(new Product(R.drawable.ic_bluetooth, "Sketch Product 8", "75","Random Artist", "Lorem Ipsum Dior Random Text Goes Here Product Info Goes Here"));
 
         mRecyclerView = findViewById(R.id.recyclerview);
         mRecyclerView.setHasFixedSize(true);
