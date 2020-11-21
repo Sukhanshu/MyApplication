@@ -20,9 +20,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/clearCart"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/headerLayout"
+        android:text="Clear Cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cartRv"
-        android:layout_below="@+id/headerLayout"
+        android:layout_below="@+id/clearCart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </RelativeLayout>

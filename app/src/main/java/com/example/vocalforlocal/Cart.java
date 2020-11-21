@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.vocalforlocal.db.TinyDb;
@@ -17,6 +19,7 @@ import java.util.ArrayList;
 public class Cart extends AppCompatActivity {
 
     private TextView headerCartTextView;
+    private Button clearCart;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mlayoutmanager;
@@ -30,7 +33,8 @@ public class Cart extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
         headerCartTextView = findViewById(R.id.headerCardText);
         mRecyclerView = findViewById(R.id.cartRv);
-        TinyDb tinyDB = new TinyDb(getApplicationContext());
+        clearCart = findViewById(R.id.clearCart);
+        final TinyDb tinyDB = new TinyDb(getApplicationContext());
         ArrayList<Product> products = tinyDB.getListProducts("cart_products", Product.class);
         String totalPrice = getTotalPrice(products);
         headerCartTextView.setText("Total Price: " + totalPrice);
@@ -41,6 +45,14 @@ public class Cart extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mlayoutmanager);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setHasFixedSize(true);
+
+        clearCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tinyDB.putListObject("cart_products", new ArrayList<Product>());
+                mAdapter.notifyDataSetChanged();
+            }
+        });
     }
 
     private String getTotalPrice(ArrayList<Product> products) {
