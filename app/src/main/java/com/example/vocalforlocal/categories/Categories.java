@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.vocalforlocal.Cart;
 import com.example.vocalforlocal.R;
 import com.example.vocalforlocal.categories.DigiArt;
 import com.example.vocalforlocal.categories.HomeDecor;
@@ -31,9 +32,9 @@ public class Categories extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btnDigiArt:
-                Log.d(TAG,"Digital Art");
+                Log.d(TAG, "Digital Art");
                 startActivity(new Intent(this, DigiArt.class));
                 break;
             case R.id.btnHomeDecor:
@@ -44,6 +45,9 @@ public class Categories extends AppCompatActivity implements View.OnClickListene
                 break;
             case R.id.btnSketches:
                 startActivity(new Intent(this, Sketches.class));
+                break;
+            case R.id.goToCartBtn:
+                startActivity(new Intent(this, Cart.class));
                 break;
         }
     }
