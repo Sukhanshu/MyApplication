@@ -6,11 +6,15 @@ public class Product {
     private int productImg;
     private String productName;
     private String productPrice;
+    private String artistName;
+    private String productInfo;
 
-    public Product(int imageResource, String name, String price){
+    public Product(int imageResource, String name, String price, String artistName, String productInfo){
         productImg = imageResource;
         productName = name;
         productPrice = price;
+        this.artistName = artistName;
+        this.productInfo=productInfo;
     }
 
     public int getproductImage(){
@@ -23,6 +27,14 @@ public class Product {
 
     public String getProductPrice(){
         return productPrice;
+    }
+
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public String getProductInfo() {
+        return productInfo;
     }
 
     @Override

@@ -28,7 +28,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
         public ImageView mImageView;
         public TextView productName;
-        public TextView productPrice;
+        public TextView productPrice, productInfo, artistName;
         public ImageButton btnAddToCart;
 
 
@@ -38,7 +38,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             productName = itemView.findViewById(R.id.txtProductName);
             productPrice = itemView.findViewById(R.id.txtProductPrice);
             btnAddToCart = itemView.findViewById(R.id.addToCartImg);
-
+            productInfo = itemView.findViewById(R.id.productInfo);
+            artistName = itemView.findViewById(R.id.artistName);
         }
     }
 
@@ -59,7 +60,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         final Product currentItem = productArrayList.get(position);
         final Context context = holder.btnAddToCart.getContext();
 
-
+        holder.artistName.setText(currentItem.getArtistName());
+        holder.productInfo.setText(currentItem.getProductInfo());
         holder.mImageView.setImageResource(currentItem.getproductImage());
         holder.productName.setText(currentItem.getProductName());
         holder.productPrice.setText(currentItem.getProductPrice());
